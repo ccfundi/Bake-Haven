@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sokogarden"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@drawable/shape"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/signup"
+        android:backgroundTint="#BEDB90"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/signin"
+        android:backgroundTint="#BEDB90"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        />
+
+</LinearLayout>
