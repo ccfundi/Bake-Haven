@@ -23,6 +23,11 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+        android:name=".Payments"
+        android:exported="false" />
+
+
+        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>

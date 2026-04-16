@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sokogarden"
+        android:text="Bake Haven"
         android:textSize="30sp"
         android:layout_marginTop="30dp"
         android:textAlignment="center"
@@ -22,26 +22,31 @@
         android:padding="10dp"
         />
 
+
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:id="@+id/signup"
-        android:backgroundTint="#BEDB90"
+        android:text="Login to your Account"
+        android:id="@+id/signin"
+        android:textColor="#0022FF"
+        android:fontFamily="sans-serif-condensed-light"
+        android:backgroundTint="#FFFFFF"
         android:layout_margin="20dp"
         android:textSize="20sp"
         android:padding="10dp"
         />
 
-    <Button
+    <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign In"
-        android:id="@+id/signin"
-        android:backgroundTint="#BEDB90"
-        android:layout_margin="20dp"
-        android:textSize="20sp"
-        android:padding="10dp"
-        />
+        android:id="@+id/progressbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/singleitem"/>
+
 
 </LinearLayout>

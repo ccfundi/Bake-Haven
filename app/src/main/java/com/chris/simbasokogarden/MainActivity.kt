@@ -3,10 +3,12 @@ package com.chris.simbasokogarden
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ProgressBar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,17 +21,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-//        Sign Up intent
-        val signup=findViewById<Button>(R.id.signup)
 
-//        Set on click listener
-        signup.setOnClickListener {
-//            Enable our intent or do our navigation
-
-            val signupIntent = Intent(applicationContext, SignUp::class.java)
-            startActivity(signupIntent)
-
-        }
 
 //        Sign In intent
         val signin=findViewById<Button>(R.id.signin)
@@ -40,6 +32,14 @@ class MainActivity : AppCompatActivity() {
             val signinIntent=Intent(applicationContext,SignIn::class.java)
             startActivity(signinIntent)
         }
+
+        val progressbar=findViewById<ProgressBar>(R.id.progressbar)
+        val recyclerView=findViewById<RecyclerView>(R.id.recyclerView)
+
+        val api="http://chriscollins.alwaysdata.net/api/getproductdetails"
+
+        val helper= ApiHelper(applicationContext)
+        helper.loadProducts(api,recyclerView,progressbar)
 
 
 
