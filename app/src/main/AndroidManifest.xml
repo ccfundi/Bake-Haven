@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimbaSokogarden">
         <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
             android:name=".SignIn"
             android:exported="false" />
         <activity
@@ -23,10 +26,8 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-        android:name=".Payments"
-        android:exported="false" />
-
-
+            android:name=".Payments"
+            android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">

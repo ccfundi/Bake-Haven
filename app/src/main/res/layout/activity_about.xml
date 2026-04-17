@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Info"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@drawable/shape"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="Welcome to our eCommerce app, a simple and user-friendly app designed to make online shopping easy and accessiblefor everyone. Users can quickly sign up and create an account, securely sign in and browse a wide range of products with detailed description and images. Our seamless checkout process allows customers to pay conviniently through M-Pesa"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_margin="20dp"
+        />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type something to speak"
+        android:background="@drawable/edittext"
+        android:fontFamily="sans-serif-condensed-light"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:layout_margin="20dp"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listen"
+        android:textSize="16sp"
+        android:layout_marginTop="6dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/speakButton"
+        android:backgroundTint="#4bbf51"
+        android:layout_margin="20dp"
+
+        />
+
+</LinearLayout>

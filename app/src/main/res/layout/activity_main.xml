@@ -29,12 +29,23 @@
         android:layout_height="wrap_content"
         android:text="Login to your Account"
         android:id="@+id/signin"
-        android:textColor="#0022FF"
+        android:textColor="#34ED14"
         android:fontFamily="sans-serif-condensed-light"
         android:backgroundTint="#FFFFFF"
-        android:layout_margin="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="-20dp"
         android:textSize="20sp"
         android:padding="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Info"
+        android:id="@+id/aboutInfo"
+        android:backgroundTint="#7DED7D"
+        android:layout_margin="30dp"
         />
 
     <ProgressBar

@@ -33,9 +33,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(signinIntent)
         }
 
+        val aboutInfo=findViewById<Button>(R.id.aboutInfo)
+
+        aboutInfo.setOnClickListener {
+
+            val aboutInfoIntent= Intent(applicationContext, About::class.java)
+            startActivity(aboutInfoIntent)
+        }
+
         val progressbar=findViewById<ProgressBar>(R.id.progressbar)
         val recyclerView=findViewById<RecyclerView>(R.id.recyclerView)
-
         val api="http://chriscollins.alwaysdata.net/api/getproductdetails"
 
         val helper= ApiHelper(applicationContext)
